@@ -10,21 +10,6 @@ async function fetchData() {
       return item.email;
     });
 
-  // (function (item) {
-  //   if (item.name.startsWith(letter)) {
-  //     return item.email;
-  //   }
-  //   return "";
-  // });
-  // const emails = data.filter((item) => {
-  //   return item.name.startsWith(letter);
-  // });
-
-  console.log(emails);
-  // const emails = data.map((user) => {
-  //   return user.email;
-  // });
-
   const divUsers = document.querySelector("#background");
   divUsers.innerHTML = `<p>${emails}</p>`;
 }
